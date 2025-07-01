@@ -959,9 +959,14 @@ footer {
   display: none;
 }
 @media only screen and (max-width: 400px) {
-  body {
-    overflow-x: hidden;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
   .navbar-button-orange {
     display: none;
   }
